@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  font-family: faunces;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  min-width: 375px;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+/* Header section */
+#header .header {
+  width: 100vw;
+  height: 30vh;
+  background-color: #3cbdfe;
+  justify-content: space-between;
+}
+#header .header .logo {
+  width: 100px;
+  height: 30px;
+  /*border: 3px solid crimson;*/
+  margin-left: 20px;
+  cursor: pointer;
+}
+#header .header .logo img {
+  width: 100px;
+  height: auto;
+}
+#header .header .hamburger {
+  width: auto;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+#header .header .hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+#header .header .hamburger .bar::after,
+#header .header .hamburger .bar::before {
+  content: " ";
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+}
+#header .header .hamburger .bar::after {
+  margin-top: 10px;
+}
+#header .header .hamburger .bar::before {
+  margin-top: 20px;
+}
+#header .nav-menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  transition: 2s ease-in-out display;
+}
+#header .nav-menu:active {
+  display: inline-flex;
+}
+#header .nav-menu a {
+  text-decoration: none;
+  color: grey;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+#header .nav-menu a:hover {
+  background-color: yellow;
+  border-radius: 8px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#hero .hero {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  flex-direction: column;
+  height: 70vh;
+  background-position: center;
+}
+.hero .homepage-text {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-bottom: 40px;
+  width: 300px;
+}
+.hero .homepage-img {
+  margin-bottom: 90px;
+}
+/* project section*/
+#project .project {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+#project .project .project-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+#project .project-items .project-text {
+  width: auto;
+  height: 250px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+#project .project-items .project-image {
+  width: 100vw;
+  height: 300px;
+}
+#project .project-items img {
+  width: 100vw;
+  height: 300px;
+}
+#project .project-items .project-text a {
+  text-decoration: none;
+  font-family: faunces;
+  font-size: 1.5rem;
+  color: brown;
+}
+#project .project-items .project-text p {
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+#project .project-items .project-text h1 {
+  margin-bottom: 15px;
+  width: 200px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+#project .project-bottom .project-bot-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+#project .project-bottom .project-bot-items img {
+  width: 100vw;
+  height: 350px;
+  position: relative;
+}
+#project .project-bottom .project-bot-items .bottom-text {
+  position: absolute;
+  bottom: 1;
+  left: 0%;
+  color: hsl(198, 62%, 26%);
+  padding-top: 200px;
+  text-align: center;
+  width: auto;
+  padding: 200px 20px 0px 20px;
+}
+#project .project-bottom .project-bot-items .first-text {
+  color: hsl(167, 40%, 24%);
+}
+#project .project-bottom .project-bot-items .bottom-text h1 {
+  padding-bottom: 20px;
+}
+/* client testimony section */
+#testimony .testimony {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: 20px 0px;
+}
+#testimony .testimony .testimony-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: hsl(210, 4%, 67%);
+}
+#testimony .testimony .client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+#testimony .testimony .client .client-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+#testimony .testimony .client-image {
+  width: 70px;
+  height: 70px;
+  margin: 30px 0px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#testimony .testimony .client-text {
+  text-align: center;
+  width: 50vw;
+}
+#testimony .testimony .client-text h1 {
+  margin: 15px 0px;
+}
+#testimony .testimony .client-text p {
+  color: hsl(232, 10%, 55%);
+}
+#testimony .testimony .client-text h5 {
+  color: hsl(210, 4%, 67%);
+}
+#testimony .testimony img {
+  width: 70px;
+  height: 70px;
+}
+/* work section */
+#work {
+  margin-top: 80px;
+}
+#work .work {
+  width: 100vw;
+  height: auto;
+  flex-wrap: wrap;
+}
+#work .work .work-image {
+  width: 50vw;
+}
+#work .work .work-image img {
+  width: 50vw;
+  height: 250px;
+}
+#footer .footer {
+  flex-direction: column;
+  height: 50vw;
+  background-color: #90d4c5;
+  color: hsl(167, 40%, 24%);
+}
+#footer .footer .logo {
+  padding: 40px 0px;
+  font-size: 1.5rem;
+}
+#footer .footer .nav a {
+  text-decoration: none;
+  margin: 0px 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: hsl(167, 40%, 24%);
+  font-size: 1rem;
+}
+#footer .footer .contact {
+  margin-top: 50px;
+}
+#footer .footer .contact img {
+  padding: 0px 20px;
+}
+/* Media querries */
+@media screen and (min-width: 1200px) {
+  #header {
+    position: relative;
+  }
+  #header .nav-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: auto;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 70px;
+  }
+  #header .nav-menu a {
+    color: white;
+    margin-left: 50px;
+    border-radius: 8px;
+  }
+  #header .nav-menu a:hover {
+    background-color: white;
+    color: black;
+
+    padding: 5px;
+  }
+  #header .header .hamburger {
+    display: none;
+  }
+
+  #project .project .project-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  #project .project .project-items .project-text {
+    width: 50vw;
+    text-align: left;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  #project .project .project-items .project-text p {
+    margin: auto;
+  }
+  #project .project .project-items .project-text h1 {
+    text-align: left;
+    padding: auto;
+    width: 25vw;
+  }
+  #project .project .project-items .project-text a {
+    width: 20vw;
+    padding: auto;
+    margin-left: 160px;
+  }
+  #project .project .project-items .project-image {
+    width: 50vw;
+  }
+  #project .project .project-items .project-image img {
+    width: 50vw;
+  }
+  #project .project .project-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+  }
+  #project .project .project-bottom img {
+    width: 50vw;
+  }
+  #project .project .project-bot-items {
+    width: 50vw;
+    height: auto;
+    position: relative;
+  }
+  #project .project .project-bot-items .bottom-text {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
+  #project .project .project-bot-items .first-text {
+    top: 0;
+  }
+  #project .project .project-bot-items .second-text {
+    top: 0;
+  }
+  #project .project .project-bot-items .bottom-text p {
+    padding: 0px 30px;
+    width: auto;
+  }
+  /* Testimony section */
+  #testimony .testimony .client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+  }
+  #testimony .testimony .client .client-items {
+    width: 30vw;
+  }
+  #testimony .testimony .client .client-items .client-text {
+    width: 25vw;
+  }
+  #testimony .testimony .client .client-items .client-text h1 {
+    font-size: 1.2rem;
+  }
+  /* work section */
+  #work .work {
+    display: flex;
+  }
+  #work .work .work-image {
+    width: 25vw;
+  }
+  #work .work .work-image img {
+    width: 25vw;
+  }
+  /* Footer */
+  #footer .footer {
+    height: 60vh;
+  }
+}
